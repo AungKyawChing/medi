@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        select,label,input{
+            margin-top: 5px;
+        }
+        .Medi{
+            width: 40px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div id="Input">
+        <div id="id1">
+            <br>
+            <label for="MedicineName">Medicine Name :</label>
+            <input type="text" name="MedicineName" value="XYZ" id="MedicineName" placeholder="Name Of Medicine">
+            <br>
+            <input type="number" value="1" name="Morning" placeholder="At Morning" class="Medi">
+            +
+            <input type="number" value="0" name="Afternoon" placeholder=" At Afternoon" class="Medi">
+            +
+            <input type="number" value="1" name="Night" placeholder="At Night" class="Medi">
+        </div>
+    </div>
+    <label for="OwnedTablet">Already how many tablets you owned :</label>
+    <input type="number"placeholder="How many tablets you owned?" value="0" id="OwnedTablet" name="OwnedTablet">
+    <br>
+    <label for="ForBuy">How many days do you want to buy :</label>
+    <input type="text"placeholder="Number of Day" value="30" id="ForBuy" name="ForBuy">
+    <br><br>
+    <button  onclick="Calculate()">Calculates</button>
+    
+    <br><br>
+    <div id="Output">
+        <table>
+            <tbody>
+                <tr>
+                    <td>Tablets Name </td><td> : <span id="MedicineNameOut"> XYZ </span></td>
+                </tr>
+                <tr>
+                    <td>Daily Tablets Need </td><td> : <span id="DailyTotalTabletOut"> 2 </span></td>
+                </tr>
+                <tr>
+                    <td>Already Owned Tablets </td><td> : <span id="OwnedTabletOut"> 0 </span></td>
+                </tr>
+                <tr>
+                    <td>For How Many Days want to Buy </td><td> : <span id="ForBuyOut"> 30 </span></td>
+                </tr>
+                <tr>
+                    <td>Have To Buy Tablets </td><td> : <span id="haveToBuyTabletsOut">60</span></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <script src="calculation.js"></script>
+</body>
+</html>
